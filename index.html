@@ -19,10 +19,21 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.xwsql/js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+#sitetime{animation:change 10s infinite;font-weight:800; }
+@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
+</style>
 <noscript>
 <link rel="stylesheet" href="https://lovablewyh.gitee.io/imwyj/xwsql/css/home/PC/css/noscript.css"/>
 </noscript>
 <script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/js/hua.js"></script>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/skel.min.js"></script>
+<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/util.js"></script>
+<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/main.js"></script>
+<script type="text/javascript">document.oncontextmenu=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onpaste=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncopy=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncut=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onselectstart=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}};</script>
+<audio autoplay><source src="https://lovablewyh.gitee.io/imwyj/xwsql/music/STYX HELIX.mp3" type="audio/mpeg"></audio>
+<script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4015694772463475" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -51,62 +62,44 @@
 	</p>
 				<!-- Footer -->
 					<footer id="footer">
-			     <p class="copyright">©2020-至今 <a href="https://jq.qq.com/?_wv=1027&k=IqWjheM8" target="_blank">橙镜网络</a></p>
-		    友情链接:<a href="https://imcys.com" target="_blank">萌新杰少的博客</a></br>
-               <span id="momk"></span>
-              <script language=javascript>
- function siteTime(){
-        window.setTimeout("siteTime()", 1000);
-        var seconds = 1000;
-        var minutes = seconds * 60;
-        var hours = minutes * 60;
-        var days = hours * 24;
-        var years = days * 365;
-        var today = new Date();
-        var todayYear = today.getFullYear();
-        var todayMonth = today.getMonth()+1;
-        var todayDate = today.getDate();
-        var todayHour = today.getHours();
-        var todayMinute = today.getMinutes();
-        var todaySecond = today.getSeconds();
-        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2020,07,04,12,12,24);
-        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-        var diff = t2-t1;
-        var diffYears = Math.floor(diff/years);
-        var diffDays = Math.floor((diff/days)-diffYears*365);
-        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("sitetime").innerHTML=" 导航站点已在风雨中运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒</br>";
-    }
-		siteTime();
-</script>
-<style>
-    #momk{animation:change 10s infinite;font-weight:800; }
-       @keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
-    </style>
+			     <p class="copyright">©2020-至今 <a href="https://jq.qq.com/?_wv=1027&k=IqWjheM8" target="_blank">橙镜网络</a></友情链接:<a href="https://imcys.com" target="_blank">萌新杰少的博客</a></br><span id="sitetime"></span>
 	</footer>
 </div>
-<div id="bg">
-</div>
-<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/skel.min.js"></script>
-<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/util.js"></script>
-<script src="https://lovablewyh.gitee.io/imwyj/xwsql/js/home/PC/main.js"></script>
-<script type="text/javascript">document.oncontextmenu=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onpaste=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncopy=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncut=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onselectstart=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}};</script>
-	<audio autoplay>
-    <source src="https://lovablewyh.gitee.io/imwyj/xwsql/music/STYX HELIX.mp3" type="audio/mpeg">
-    </audio>
-	<!-- REQUIRED SCRIPTS FILES -->
-	<script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div id="bg"></div>
+<script language=javascript>
+ function siteTime(){
+	        window.setTimeout("siteTime()", 1000);
+	        var seconds = 1000;
+	        var minutes = seconds * 60;
+	        var hours = minutes * 60;
+	        var days = hours * 24;
+	        var years = days * 365;
+	        var today = new Date();
+	        var todayYear = today.getFullYear();
+	        var todayMonth = today.getMonth()+1;
+	        var todayDate = today.getDate();
+	        var todayHour = today.getHours();
+	        var todayMinute = today.getMinutes();
+	        var todaySecond = today.getSeconds();
+	        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+	        year - 作为date对象的年份，为4位年份值
+	        month - 0-11之间的整数，做为date对象的月份
+	        day - 1-31之间的整数，做为date对象的天数
+	        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+	        minutes - 0-59之间的整数，做为date对象的分钟数
+	        seconds - 0-59之间的整数，做为date对象的秒数
+	        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+	        var t1 = Date.UTC(2020,04,07,12,12,47); //北京时间2016-12-1 00:00:00
+	        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+	        var diff = t2-t1;
+	        var diffYears = Math.floor(diff/years);
+	        var diffDays = Math.floor((diff/days)-diffYears*365);
+	        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+	        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+	        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+	        document.getElementById("sitetime").innerHTML=" 导航已在风雨中运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒</br>";
+	    }
+			siteTime();
 </script>
 <script type="text/javascript"> 
 /* 鼠标特效 */ 
