@@ -9,11 +9,11 @@ api目前在搭建状态中
 1.浏览器测试
 
 ```markdown
- http://api.wkkjinc.cn/game/
+https://api.fcyle.com/xwsql/music/STYX%20HELIX.mp3
 ```
 2.404调用地址
 ```markdown
- http://api.wkkjinc.cn/404.php
+ https://fcyle.com/404.php
 ```
 
 
@@ -27,4 +27,4 @@ api目前在搭建状态中
 
 ### 我们的站点
 
-[点击进入](https://wkkjinc.cn/)
+[点击进入](https://fcyle.com/)
